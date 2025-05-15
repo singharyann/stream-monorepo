@@ -1,0 +1,106 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/bugfixes:
+    dependencies:
+      bugs:
+        specifier: ^0.1.0
+        version: 0.1.0
+
+  packages/bugs: {}
+
+packages:
+
+  bugs@0.1.0:
+    resolution: {integrity: sha512-stHIYGT3o4lOIPSRY+0C0x2V2HiRQFATupIxkJDZKGFh17RhqytKuYzomxIwSD+XEAQkQDiK+uzcFWfh88Ut1A==}
+
+  duplexer@0.1.2:
+    resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
+
+  event-stream@3.1.0:
+    resolution: {integrity: sha512-RDCz8GJuTKOjuKlReuenQcxwcb6mwKnatHn0s5wzuHu/e4eHq9HpwjaT+tVrS/wO/Nptep6hxoontOaReHMwHw==}
+
+  from@0.1.7:
+    resolution: {integrity: sha512-twe20eF1OxVxp/ML/kq2p1uc6KvFK/+vs8WjEbeKmV2He22MKm7YF2ANIt+EOqhJ5L3K/SuuPhk0hWQDjOM23g==}
+
+  lodash@2.4.1:
+    resolution: {integrity: sha512-qa6QqjA9jJB4AYw+NpD2GI4dzHL6Mv0hL+By6iIul4Ce0C1refrjZJmcGvWdnLUwl4LIPtvzje3UQfGH+nCEsQ==}
+    engines: {'0': node, '1': rhino}
+
+  map-stream@0.1.0:
+    resolution: {integrity: sha512-CkYQrPYZfWnu/DAmVCpTSX/xHpKZ80eKh2lAkyA6AJTef6bW+6JpbQZN5rofum7da+SyN1bi5ctTm+lTfcCW3g==}
+
+  pause-stream@0.0.11:
+    resolution: {integrity: sha512-e3FBlXLmN/D1S+zHzanP4E/4Z60oFAa3O051qt1pxa7DEJWKAyil6upYVXCWadEnuoqa4Pkc9oUx9zsxYeRv8A==}
+
+  pty.js@0.2.3:
+    resolution: {integrity: sha512-po+TTlwCDxbAfpwqUhJdoS6KEHrQLp9cO6QI0aCbxxyKSxNA/qzQf++n6aiYX60VbP/4tGKVtbc3Km5nc/l/lw==}
+
+  q@1.0.0:
+    resolution: {integrity: sha512-T1JUVxPfuwClrPLGiM3J8SBURMDWp1ZGMpHLU/i4yqITbj6ObS8C0tcgH+F1YqVgWbBQs7Pzg/fATrSR+dgs8w==}
+    engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
+    deprecated: |-
+      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
+      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+
+  split@0.2.10:
+    resolution: {integrity: sha512-e0pKq+UUH2Xq/sXbYpZBZc3BawsfDZ7dgv+JtRTUPNcvF5CMR4Y9cvJqkMY0MoxWzTHvZuz1beg6pNEKlszPiQ==}
+
+  stream-combiner@0.0.4:
+    resolution: {integrity: sha512-rT00SPnTVyRsaSz5zgSPma/aHSOic5U1prhYdRy5HS2kTZviFpmDgzilbtsJsxiroqACmayynDN/9VzIbX5DOw==}
+
+  through@2.3.8:
+    resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
+
+snapshots:
+
+  bugs@0.1.0:
+    dependencies:
+      event-stream: 3.1.0
+      lodash: 2.4.1
+      pty.js: 0.2.3
+      q: 1.0.0
+
+  duplexer@0.1.2: {}
+
+  event-stream@3.1.0:
+    dependencies:
+      duplexer: 0.1.2
+      from: 0.1.7
+      map-stream: 0.1.0
+      pause-stream: 0.0.11
+      split: 0.2.10
+      stream-combiner: 0.0.4
+      through: 2.3.8
+
+  from@0.1.7: {}
+
+  lodash@2.4.1: {}
+
+  map-stream@0.1.0: {}
+
+  pause-stream@0.0.11:
+    dependencies:
+      through: 2.3.8
+
+  pty.js@0.2.3: {}
+
+  q@1.0.0: {}
+
+  split@0.2.10:
+    dependencies:
+      through: 2.3.8
+
+  stream-combiner@0.0.4:
+    dependencies:
+      duplexer: 0.1.2
+
+  through@2.3.8: {}
